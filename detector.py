@@ -14,7 +14,7 @@ class ObjectDetector:
         Возвращает: список bounding boxes [x1, y1, x2, y2]
         """
         # device=0 для GPU, device='cpu' для CPU
-        results = self.model(frame, verbose=False, device=0, classes=[class_id], conf=conf_threshold)
+        results = self.model(frame, verbose=False, device='cpu', classes=[class_id], conf=conf_threshold)
         
         detections = []
         for box in results[0].boxes:

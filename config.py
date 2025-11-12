@@ -1,5 +1,5 @@
 VIDEO_PATH = "test.mp4"
-YOLO_MODEL_PATH = "yolov8n.pt"  
+YOLO_MODEL_PATH = "yolov8s.pt"  
 ZONE_CONFIG_PATH = "restricted_zones.json"
 
 PERSON_CLASS_ID = 0  

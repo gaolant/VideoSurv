@@ -29,6 +29,10 @@ class RestrictedZone:
         if self.polygon is None:
             return False
         
+        # Явно преобразуем к кортежу из стандартных Python int
+        # Это защищает от ошибок типов данных NumPy
+        safe_point = (int(point[0]), int(point[1]))
+
         # cv2.pointPolygonTest - быстрая C++ реализация
         # Возвращает +1 (внутри), 0 (на границе), -1 (снаружи)
-        return cv2.pointPolygonTest(self.polygon, tuple(point), False) >= 0
+        return cv2.pointPolygonTest(self.polygon, safe_point, False) >= 0
