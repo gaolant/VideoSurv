@@ -1,0 +1,12 @@
+VIDEO_PATH = "test.mp4"
+YOLO_MODEL_PATH = "yolov8n.pt"  
+ZONE_CONFIG_PATH = "restricted_zones.json"
+
+PERSON_CLASS_ID = 0  
+CONFIDENCE_THRESHOLD = 0.5
+
+ALARM_COOLDOWN_SEC = 3.0
+
+COLOR_GREEN = (0, 255, 0)
+COLOR_RED = (0, 0, 255)
+COLOR_WHITE = (255, 255, 255)
