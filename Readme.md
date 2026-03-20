@@ -2,6 +2,17 @@
 
 Проект использует YOLOv8 и OpenCV для обнаружения людей в заранее определенной "запрещенной" зоне на видео.
 
+<table>
+<tr>
+<td align="center"><b>Zone Selection</b></td>
+<td align="center"><b>Video Surveilance</b></td>
+</tr>
+<tr>
+<td align="center"><img src="zone_selector_gif.gif" alt="3-modality demo" width="100%"></td>
+<td align="center"><img src="surv_gif.gif" alt="2-modality demo" width="100%"></td>
+</tr>
+</table>
+
 ## Установка
 
 1.  Клонируйте репозиторий:
